@@ -12,7 +12,7 @@ Performance Optimization
     - Action: Check if your portfolio images are large and compress them.
 [ ] Minify CSS and JavaScript: Minify your CSS and JavaScript files to remove unnecessary characters, making them smaller and faster to load.
     - Action: Use tools like cssnano for CSS and UglifyJS for JavaScript.
-[ ] Lazy Load Images: Implement lazy loading for images, which delays the loading of images until they are needed (i.e., when the user scrolls to them).
+[X] Lazy Load Images: Implement lazy loading for images, which delays the loading of images until they are needed (i.e., when the user scrolls to them).
 [ ] Use a CDN (Content Delivery Network): Host your static files (CSS, JS, images) on a CDN to improve the load times by serving files from servers closer to the user’s location.
 
 
