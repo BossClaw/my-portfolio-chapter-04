@@ -34,27 +34,41 @@ body.dark {
 }
 
 /* BUILDING */
+.bg_building {
+	width: 960px;
+	min-height: 340px;
+	background-size: 960px;
+	margin-inline: auto;
+	margin-block: 0;
+	background-position: center bottom;
+}
 
 .build_top {
-	background-image: url('/img/bg_BUILD_TOP.png');
-	background-position: right bottom;
+	background-image: url('/img/bg_BUILD_TOP_LIGHT.png');
 	background-repeat: no-repeat;
-	background-size: 100%;
-	height: var(--section_height);
+
+	display: flex;
+	flex-direction: column;
+}
+
+header,
+footer {
+	margin-block: auto 8px;
+}
+footer {
+	display: none;
 }
 
 .build_mid {
-	background-image: url('/img/bg_BUILD_MID.png');
-	background-position: right bottom;
+	background-image: url('/img/bg_BUILD_MID_LIGHT.png');
 	background-repeat: repeat-y;
-	background-size: 100%;
-	min-height: var(--section_height);
+    padding-block: 32px;
 }
 
 .build_bot {
-	background-image: url('/img/bg_BUILD_BOT.png');
-	background-position: right bottom;
-	background-repeat: no-repeat;
-	background-size: 100%;
-	height: var(--section_height);
+	background-image: url('/img/bg_BUILD_BOT_LIGHT.png');
+	background-repeat: repeat-x;
+    width: 100% !important;
+	display: flex;
+	flex-direction: column;
 }
