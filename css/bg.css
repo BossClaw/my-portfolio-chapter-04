@@ -1,0 +1,64 @@
+:root {
+	--scroll-offset: 0;
+
+	--scroll-bg: -1px;
+	--scroll-mg: -1px;
+	--scroll-fg: -1px;
+
+	--pad_gap: 16px;
+
+	--section_height: 680px;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background: url('../img/bg_SKY_LIGHT.png') repeat-x fixed center / auto 100vh;
+}
+
+body.dark {
+	background-image: url('../img/bg_SKY_DARK.png') !important;
+}
+
+#parallax_container {
+	background-image: url('../img/bg_FG_LIGHT.png'), url('../img/bg_MG_LIGHT.png'), url('../img/bg_BG_LIGHT.png');
+	background-position: left var(--scroll-fg), left var(--scroll-mg), left var(--scroll-bg);
+	background-repeat: repeat-x, repeat-x, repeat-x;
+	background-size: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+#parallax_container {
+	background-image: url('../img/bg_FG_DARK.png'), url('../img/bg_MG_DARK.png'), url('../img/bg_BG_DARK.png');
+}
+
+#parallax_container.dark {
+	background-image: url('../img/bg_FG_DARK.png'), url('../img/bg_MG_DARK.png'), url('../img/bg_BG_DARK.png');
+}
+
+/* BUILDING */
+
+.build_top {
+	background-image: url('/img/bg_BUILD_TOP.png');
+	background-position: right bottom;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	height: var(--section_height);
+}
+
+.build_mid {
+	background-image: url('/img/bg_BUILD_MID.png');
+	background-position: right bottom;
+	background-repeat: repeat-y;
+	background-size: 100%;
+	min-height: var(--section_height);
+}
+
+.build_bot {
+	background-image: url('/img/bg_BUILD_BOT.png');
+	background-position: right bottom;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	height: var(--section_height);
+}

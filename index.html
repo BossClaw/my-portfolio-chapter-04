@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BossClaw's Portfolio - Chapter 4 Continous Learning</title>
+
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/bg.css" />
+    <link rel="stylesheet" href="css/anim.css" />
+    <link rel="stylesheet" href="css/crt.css" />
+
+    <script defer src="js/script.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  </head>
+
+  <!-- NOTE - CRT DISABLED FOR NOW -->
+  <!-- <body class="crt"> -->
+
+  <body>
+    <a name="top"></a>
+
+    <div id="parallax_container">
+      <div class="bodyContent">
+        <header>
+          <img src="img/logo.png" class="mw-100" />
+
+          <nav>
+            <ul>
+              <li>
+                <a class="proj_ahref" href="#projects" data-proj-index="1"
+                  >GAMES</a
+                >
+              </li>
+              <li>
+                <a class="proj_ahref" href="#projects" data-proj-index="2"
+                  >VIDS</a
+                >
+              </li>
+              <li>
+                <a class="proj_ahref" href="#projects" data-proj-index="3"
+                  >CODE</a
+                >
+              </li>
+              <li>
+                <a class="proj_ahref" href="#projects" data-proj-index="4"
+                  >ILLO</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </header>
+
+        <main>
+          <a name="about"></a>
+
+          <section id="about" class="border_nes content_half flex_response">
+            <div class="tc">
+              <img src="img/claw_face.png" class="mw-100" />
+            </div>
+
+            <div class="tc">
+              <h2>About</h2>
+              <p>
+                Born surrounded by wood panelling.<br />
+                Raised in a VHS rental store.<br />
+                Got into fights over LEGO.<br />
+                Taught myself C64 BASIC in grade 5.<br /><br /><br />
+                Destined for Programming and Game Dev!
+              </p>
+            </div>
+          </section>
+
+          <section id="projects" class="border_nes content_full tc">
+            <a name="projects"></a>
+
+            <h2>Gallery O' Projects</h2>
+
+            <div class="proj_gallery">
+              <div class="side_col">
+                <div class="gallery_project">
+                  <a class="proj_ahref" href="#projects" data-proj-index="1">
+                    <img src="img/proj.gif" class="proj_img" />
+                  </a>
+                  <button class="project_butt" data-proj-index="1">
+                    Games
+                  </button>
+                </div>
+
+                <div class="gallery_project">
+                  <a class="proj_ahref" href="#projects" data-proj-index="2">
+                    <img src="img/proj.gif" />
+                  </a>
+                  <button class="project_butt" data-proj-index="2">Vids</button>
+                </div>
+              </div>
+
+              <div class="center_col">
+                <div class="project_info" data-proj-index="0">
+                  <span id="typed_cta"></span>
+                </div>
+
+                <!-- HIDDEN PROJ INFO AT START -->
+                <div class="project_info" data-proj-index="1">
+                  <iframe
+                    frameborder="0"
+                    src="https://itch.io/embed/2228867?linkback=true&amp;dark=true"
+                    width="552"
+                    height="167"
+                    ><a href="https://bossclaw.itch.io/slimestronauts"
+                      >Slimestronauts vs Replinodules from the Dark Side of
+                      Uranus by BossClaw</a
+                    ></iframe
+                  >
+                  <p>Game Dev!</p>
+                </div>
+
+                <div class="project_info" data-proj-index="4">
+                  <iframe
+                    width="560"
+                    height="315"
+                    src="https://www.youtube.com/embed/7N-C84GIK-Y?si=XA-Mar9GhcBihWqR"
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin"
+                    allowfullscreen
+                  ></iframe>
+                  <p>Music/Comedy Videos!</p>
+                </div>
+
+                <div class="project_info" data-proj-index="3">
+                  <p>WEB / APP DEV!</p>
+                  <p>(coming soon)</p>
+                </div>
+
+                <div class="project_info" data-proj-index="2">
+                  <p>ILLUSTRATION!</p>
+                  <p>(coming soon)</p>
+                </div>
+              </div>
+
+              <div class="side_col">
+                <div class="gallery_project">
+                  <a class="proj_ahref" href="#projects" data-proj-index="3">
+                    <img src="img/proj.gif" />
+                  </a>
+                  <button class="project_butt" data-proj-index="3">Code</button>
+                </div>
+
+                <div class="gallery_project">
+                  <a class="proj_ahref" href="#projects" data-proj-index="4">
+                    <img src="img/proj.gif" />
+                  </a>
+                  <button class="project_butt" data-proj-index="4">Illo</button>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section id="contact" class="border_nes">
+            <form id="contact_form">
+              <table class="form_table">
+                <tr>
+                  <td colspan="3">
+                    <h5>Let's Talk!</h5>
+                  </td>
+                </tr>
+                <tr>
+                  <td><label for="contact_name">Name</label></td>
+                  <td>
+                    <input
+                      id="contact_name"
+                      name="contact_name"
+                      type="text"
+                      placeholder="your name"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td><span class="error" id="name_error"></span><br /></td>
+                </tr>
+
+                <tr>
+                  <td><label for="contact_subject">Subject</label></td>
+                  <td>
+                    <input
+                      id="contact_subject"
+                      name="contact_subject"
+                      type="text"
+                      placeholder="your subject"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td><span class="error" id="subject_error"></span><br /></td>
+                </tr>
+
+                <tr>
+                  <td><label for="contact_email">Email</label></td>
+                  <td>
+                    <input
+                      id="contact_email"
+                      type="text"
+                      placeholder="your email"
+                    />
+                  </td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td><span class="error" id="email_error"></span><br /></td>
+                </tr>
+
+                <tr>
+                  <td></td>
+                  <td>
+                    <button type="submit">Send Message</button>
+                  </td>
+                </tr>
+              </table>
+            </form>
+          </section>
+
+          <section id="bottom_content" class="content_auto flex_response">
+            <div class="border_nes ul_center">
+              <ul>
+                <li><h5>Socials</h5></li>
+                <li><a>Itch.io</a></li>
+                <li><a>Bluesky</a></li>
+                <li><a>Mastodon</a></li>
+                <li><a>Youtube</a></li>
+              </ul>
+            </div>
+
+            <div class="border_nes ul_center">
+              <ul>
+                <li><h5>Site Nav</h5></li>
+                <li><a href="/">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="/">Top Secret</a></li>
+              </ul>
+            </div>
+
+            <!-- <div class="border_nes tc">
+              <h5>Newsletter Signup</h5>
+
+              <p>Receive infrequent updates about cool stuff!</p>
+
+              <input type="string" placeholder="your email" />
+              <button class="w-100">Send</button>
+            </div> -->
+          </section>
+        </main>
+
+        <footer id="footer">
+          <p>
+            &copy; 20XX boss_claw <span class="cursor"></span>
+            <a href="#top">Top</a>
+          </p>
+        </footer>
+      </div>
+    </div>
+
+    <script>
+      // GET THE PROJ BUTTONS, ADD LISTENERS
+      let proj_ahref_arr;
+      let proj_button_arr;
+      let proj_info_arr;
+
+      document.addEventListener("DOMContentLoaded", () => {
+        // CENTER COL
+        const centerCol = document.querySelector(".center_col");
+
+        // GET PROJ BUTT, AHREF & INFO ARRS
+        proj_info_arr = document.querySelectorAll(".project_info");
+        console.log(`GOT INFOS(${proj_info_arr.length})`);
+
+        proj_button_arr = document.querySelectorAll(".project_butt");
+        console.log(`GOT BUTTONS(${proj_button_arr.length})`);
+
+        proj_ahref_arr = document.querySelectorAll(".proj_ahref");
+        console.log(`GOT AHREFS(${proj_ahref_arr.length})`);
+
+        // ADD CLICK LOGIC TO BUTTONS
+        proj_button_arr.forEach((button) => {
+          button.addEventListener("click", () => {
+            const projIndex = button.dataset.projIndex;
+            show_proj(projIndex);
+          });
+        });
+
+        // ADD CLICK LOGIC TO AHREFS
+        proj_ahref_arr.forEach((ahref) => {
+          ahref.addEventListener("click", () => {
+            // GET THE PROJ TO SHOW
+            const projIndex = ahref.dataset.projIndex;
+            show_proj(projIndex);
+          });
+        });
+
+        // MAKE SURE CTA IS VIS AND REST ARE HIDDEN ON PAGE LOAD
+        show_proj(0);
+      });
+
+      function show_proj(projIndex) {
+        // SIMPLE LOOP TO HIDE NOT WANTED, SHOW TARG
+        // NOTE INCLUSIVE AT THE END BECAUSE 0 IS CTA
+
+        let targ_div;
+
+        for (let pi = 0; pi < proj_button_arr.length + 1; pi++) {
+          if (pi == projIndex) {
+            console.log("SHOWING " + pi);
+            proj_info_arr[pi].style.display = "flex";
+
+            targ_div = proj_info_arr[pi];
+          } else {
+            console.log("HIDING " + pi);
+            proj_info_arr[pi].style.display = "none";
+          }
+        }
+
+        // TBD - DOES SMOOTH SCROLL WORK IF WINDOWS 'REDUCED MOTION' IS ENABLED?
+        // if (targ_div) {
+        // alert("SCROLLING" + targ_div);
+        // targ_div.scrollIntoView({ behavior: "smooth", block: "start" });
+        //}
+      }
+
+      // HANDLE THE BG PARALLAX
+      // const bottom_offset = 384
+      const bottom_offset = 680;
+      function update_bg_scroll(scroll_y) {
+        const scroll_bg = bottom_offset + scroll_y * 0.7;
+        const scroll_mg = bottom_offset + scroll_y * 0.8;
+        const scroll_fg = bottom_offset + scroll_y * 0.9;
+
+        console.log(
+          `SCROLL_Y[${scroll_y}] BG[${scroll_bg}] MG[${scroll_mg}] FG[${scroll_fg}]`
+        );
+
+        document.documentElement.style.setProperty(
+          "--scroll-bg",
+          `${scroll_bg}px`
+        );
+        document.documentElement.style.setProperty(
+          "--scroll-mg",
+          `${scroll_mg}px`
+        );
+        document.documentElement.style.setProperty(
+          "--scroll-fg",
+          `${scroll_fg}px`
+        );
+      }
+
+      document.addEventListener("DOMContentLoaded", () => {
+        update_bg_scroll(0);
+      });
+
+      document.addEventListener("scroll", () => {
+        update_bg_scroll(window.scrollY);
+      });
+
+      // ADD THE FORM VAL
+      document
+        .getElementById("contact_form")
+        .addEventListener("submit", function (event) {
+          let isValid = true;
+
+          // Name Validation
+          const nameInput = document.getElementById("contact_name");
+          const nameError = document.getElementById("name_error");
+          if (nameInput.value.trim() === "") {
+            nameError.textContent = "Name required";
+            isValid = false;
+            console.log("NAME NOT VALID[" + nameInput.value + "]");
+          } else {
+            nameError.textContent = "";
+          }
+
+          // Subject Validation
+          const subjectInput = document.getElementById("contact_subject");
+          const subjectError = document.getElementById("subject_error");
+          if (subjectInput.value.trim() === "") {
+            subjectError.textContent = "Subject Required";
+            isValid = false;
+            console.log("SUBJECT NOT VALID[" + subjectInput.value + "]");
+          } else {
+            subjectError.textContent = "";
+          }
+
+          // Email Validation
+          const emailInput = document.getElementById("contact_email");
+          const emailError = document.getElementById("email_error");
+          const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+          if (!emailPattern.test(emailInput.value.trim())) {
+            emailError.textContent = "Valid email required";
+            console.log("EMAIL NOT VALID[" + emailInput.value + "]");
+            isValid = false;
+          } else {
+            emailError.textContent = "";
+          }
+
+          // PREVENT FORM UNTIL THERE IS A SERVER TO SEND MESG TO
+          event.preventDefault();
+
+          if (!isValid) {
+            // THE ERRORS ARE ALREADY VISIBLE, WAIT FOR USER TO RE-SEND
+          } else {
+            alert("You've entered valid info, congrats!");
+          }
+        });
+    </script>
+
+    <script>
+      var typed_cta = new Typed("#typed_cta", {
+        strings: [
+          "Just click on a project to learn more!",
+          "(thankully Typed.js worked flawlessly!)",
+        ],
+        typeSpeed: 50,
+      });
+    </script>
+  </body>
+</html>
