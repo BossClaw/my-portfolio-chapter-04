@@ -44,7 +44,7 @@ body.dark {
 }
 
 .build_top {
-	background-image: url('/img/bg_BUILD_TOP_LIGHT.png');
+	background-image: url('../img/bg_BUILD_TOP_LIGHT.png');
 	background-repeat: no-repeat;
 
 	display: flex;
@@ -60,13 +60,13 @@ footer {
 }
 
 .build_mid {
-	background-image: url('/img/bg_BUILD_MID_LIGHT.png');
+	background-image: url('../img/bg_BUILD_MID_LIGHT.png');
 	background-repeat: repeat-y;
     padding-block: 32px;
 }
 
 .build_bot {
-	background-image: url('/img/bg_BUILD_BOT_LIGHT.png');
+	background-image: url('../img/bg_BUILD_BOT_LIGHT.png');
 	background-repeat: repeat-x;
     width: 100% !important;
 	display: flex;
