@@ -58,7 +58,7 @@ body {
 	margin-inline: auto;
 	padding: var(--pad_gap);
 	/* SLIGHTLY RESPONSIVE FOR A START */
-	background-color: var(--page_bg);	
+	background-color: var(--page_bg);
 }
 
 /* NAV & LINKS */
@@ -465,6 +465,16 @@ footer {
 	background: none;
 }
 
-.mode_hidden{
-  display: none;
+.mode_hidden {
+	display: none;
+}
+
+/* USER FEEDBACK ON BUTTON ANIMS */
+button {
+	transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+button:hover {
+	transform: scale(1.05);
+	background-color: #ffcc00;
 }
