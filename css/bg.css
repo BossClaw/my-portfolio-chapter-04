@@ -29,10 +29,6 @@ body.dark {
 	padding: 0;
 }
 
-#parallax_container {
-	background-image: url('../img/bg_FG_DARK.png'), url('../img/bg_MG_DARK.png'), url('../img/bg_BG_DARK.png');
-}
-
 #parallax_container.dark {
 	background-image: url('../img/bg_FG_DARK.png'), url('../img/bg_MG_DARK.png'), url('../img/bg_BG_DARK.png');
 }

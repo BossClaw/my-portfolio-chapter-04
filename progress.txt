@@ -1,7 +1,7 @@
 Feature Ideas
 
 [?] Smooth Scrolling: Add smooth scrolling for a more professional feel when navigating between sections of your portfolio.
-[ ] Dark Mode Toggle: Allow users to switch between light and dark themes on your portfolio.
+[X] Dark Mode Toggle: Allow users to switch between light and dark themes on your portfolio.
 [ ] Project Filtering: Create a filter feature where users can sort projects by categories (e.g., JavaScript, HTML/CSS, React).
     - How: Use JavaScript to filter and display projects based on selected categories.
 [ ] Animations: Add animations to buttons, links, or section transitions to make the user experience smoother and more engaging.
